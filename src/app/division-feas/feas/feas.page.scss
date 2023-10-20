@@ -1,0 +1,30 @@
+
+ion-card{
+    align-items: center ;
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    img{
+        height: 400px;
+        width: 400px;
+        
+    }
+}
+ion-fab {
+    margin-bottom: var(--ion-safe-area-bottom, 0);
+  }
+
+
+.test{
+    width: 80px;
+    height: 80px;
+    --background: #7c78b8;
+}
+.test2{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+ion-button{
+    color: #7c78b8;
+}

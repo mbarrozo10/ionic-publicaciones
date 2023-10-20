@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-button (click)="logout()">
+      <ion-icon slot="icon-only" name="log-out"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-title>Bienvenido {{usuario}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-button (click)="accederLindas()" shape="round" expand="full" >
+      Cosas Lindas
+    </ion-button>
+    <ion-button (click)="accederFeas()" shape="round" expand="full">Cosas Feas</ion-button>
+ 
+  </div>
+
+ 
+</ion-content>
+
+

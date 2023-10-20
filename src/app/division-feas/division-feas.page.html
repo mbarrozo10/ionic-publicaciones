@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons routerLink="../" slot="start">
+    <ion-button >
+      <ion-icon  slot="icon-only" name="chevron-back-circle"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-title>Feas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="feas">
+        <ion-icon name="image-outline"></ion-icon>
+        Galeria
+      </ion-tab-button>
+      <ion-tab-button tab="estadisticas">
+        <ion-icon name="analytics-outline"></ion-icon>
+        Estadisticas
+      </ion-tab-button>
+      <ion-tab-button tab="profile-feas">
+        <ion-icon name="person-outline"></ion-icon>
+        Mis Publicaciones
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

@@ -1,0 +1,33 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">estadisticas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Estadisticas</ion-card-title>
+      <!-- <ion-card-subtitle></ion-card-subtitle> -->
+    </ion-card-header>
+    <ion-card-content class="grafico ion-padding ion-margin ion-text-center">
+      <div class="areachart-wrapper">
+      <ngx-charts-pie-chart
+      [view]="view"
+      [gradient]="gradient"
+      [scheme]="colorScheme"
+      [results]="single"
+      [labels]="showLabels"
+      [legend]="showLegend"
+      [legendPosition]="legendPosition"
+      [doughnut]="isDoughnut"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+      class="grafico">
+    
+    </ngx-charts-pie-chart>
+  </div>
+       </ion-card-content>
+  </ion-card>
+</ion-content>

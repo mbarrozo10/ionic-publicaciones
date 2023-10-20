@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Feas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let image of imagenes;let i =index ">
+    <ion-card>
+      <img alt="Silhouette of mountains" [src]="image['url']" />
+      <ion-card-header>
+        <ion-card-title></ion-card-title>
+        <ion-card-subtitle>Likes: {{image['likes']}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Fecha: {{image['fecha']}}
+        Usuario: {{image['usuario']}}
+      </ion-card-content>
+      <ion-button fill="clear"  (click)="mostrar(i)">
+        <ion-icon name="heart-outline"></ion-icon>
+        <label hidden >{{indexes[i]}}</label>
+      </ion-button>
+    </ion-card>
+    </div>
+  <div class="ion-padding">
+    
+    <!-- <ion-button  shape="round" >subir</ion-button> -->
+  
+    <input hidden #inputImageProfile type="file" (change)="newImage($event)">
+  </div>
+  
+    <ion-fab slot="fixed"  vertical="bottom" horizontal="end">
+      <ion-fab-button class="test">
+        <ion-icon name="chevron-back-circle"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="start">
+        <ion-fab-button class="test2" >
+          <ion-icon (click)="inputImageProfile.click()" name="document"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button class="test2">
+          <ion-icon (click)="pruebaFoto()" name="camera"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  
+</ion-content>

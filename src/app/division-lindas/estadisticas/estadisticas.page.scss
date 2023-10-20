@@ -1,0 +1,16 @@
+
+.grafico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    // width: 1000px;
+  //   max-width: 100%; /* El gráfico ocupará el 100% del ancho máximo disponible */
+  // height: auto; 
+    // height: 1000px;
+}
+
+
+  ::ng-deep .ngx-charts { text { fill: #fff !important; } }
+

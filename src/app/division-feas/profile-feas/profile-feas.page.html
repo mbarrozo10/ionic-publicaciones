@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Profile Feas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngFor="let image of imagenes;let i =index ">
+    <ion-card>
+      <img alt="Silhouette of mountains" [src]="image['url']" />
+      <ion-card-header>
+        <ion-card-title></ion-card-title>
+        <ion-card-subtitle>Likes: {{image['likes']}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Fecha: {{image['fecha']}}
+        Usuario: {{image['usuario']}}
+      </ion-card-content>
+       </ion-card>
+    </div>
+</ion-content>
